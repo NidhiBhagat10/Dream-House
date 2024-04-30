@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHouse: Turning Your Dreams into Addresses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="Landingpage/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="../Home/home.html" class="logo-section">
+                <img src="assets/logo.png" alt="logo">
+            </a>
+
+            <div class="nav-right">
+                <button class="btn" onclick="openPropertyListing()">
+                    <span>Explore Properties</span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <div id="glow-blur"></div>
+
+    <div id="main">
+        <div class="hero-img" id="hero-img">
+        </div>
+
+        <div id="page1">
+            <h1>BUY. SELL. RENT.</h1>
+            <h2>DreamHouse: Turning Your Dreams Into Addresses</h2>
+            <p> Discover the perfect home for you and your family with Dream House. Explore our wide range of properties
+                and find the one that fits your lifestyle
+            </p>
+            <div id="search-bar">
+                <button id="submit-btn" class="btn" onclick="
+                    openSearchPage()">Search Property</a>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>BUY.</h4>
+                    <h4>SELL.</h4>
+                    <h4>RENT.</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>BUY.</h4>
+                    <h4>SELL.</h4>
+                    <h4>RENT.</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>BUY.</h4>
+                    <h4>SELL.</h4>
+                    <h4>RENT.</h4>
+                </div>
+            </div>
+
+            <div id="about-us">
+
+                <div id="about-us-in">
+                    <h3>About Us</h3>
+                    <p>
+                        "At DreamHouse, we're more than just real estate agents—we're your dedicated partners
+                        in finding the perfect home or investment opportunity. With a commitment to integrity and
+                        personalized service, we guide you through every step of the process, ensuring a seamless
+                        experience from start to finish. Whether you're buying, selling, or renting, trust DreamHouse to
+                        deliver exceptional results tailored to your unique needs."
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="cards-container">
+                <div class="card" id="card1">
+                    <a href="Home/home.html">
+                        <div class="overlay">
+                            <h4>Sell property</h4>
+                            <p>Trust DreamHouse to market your property effectively, negotiate the best price, and
+                                manage the complexities of the selling process with precision and care.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" id="card2">
+                    <a href="propertylisting/search.html">
+                        <div class="overlay">
+                            <h4>Renting a House</h4>
+                            <p>Explore our range of rental options with confidence. From apartments to single-family
+                                homes,
+                                we'll assist you in finding the perfect rental property to suit your lifestyle and
+                                budget,
+                                ensuring a smooth and stress-free renting experience."</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" id="card3">
+                    <a href="propertylisting/search.html">
+                        <div class="overlay">
+                            <h4>Buying a Home</h4>
+                            <p> Let us help you find the home of your dreams. With personalized attention and expert
+                                advice,
+                                we'll navigate the market to identify properties that match your criteria and guide you
+                                through the buying process from start to finish.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="blue-div">
+                <h4>Get home recommendations Sign in for a more personalized experience.</h4>
+                <button id="signupBtn" onclick="openSignupForm()">Sign Up</button>
+            </div>
+        </div>
+        <footer class="footer-section">
+            <div class="container">
+                <a>
+                    <h2>DreamHouse</h2>
+                </a>
+                <p>Turn your Dream into Addresses with Us.</p>
+                <ul class="social-links">
+                    <li><a href="Your FaceBook Profile address"><img src="assets/icon/instagram.png"
+                                height="25px"></a></li>
+                    <li><a href="Your Insta Profile address"><img src="assets/icon/facebook.png" height="25px"></a>
+                    </li>
+                    <li><a href="Your Linkedln profile address"><img src="assets/icon/linkedin (1).png"
+                                height="25px"></a></li>
+                    <li><a href="Your Twitter profile address"><img src="assets/icon/twitter (1).png"
+                                height="25px"></a></li>
+                </ul>
+            </div>
+            <div class="products footer-lists">
+                <h3>Products</h3>
+                <ul>
+                    <li>Overview</li>
+                    <li>Solutions</li>
+                    <li>Pricing</li>
+                    <li>Customer</li>
+                </ul>
+            </div>
+            <div class="company footer-lists">
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Investor Relations</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="support footer-lists">
+                <h3>Support</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Documentation</li>
+                    <li>Chat</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="legal footer-lists">
+                <h3>Leagel</h3>
+                <ul>
+                    <li>Terms of Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies settings</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+    <!--Gsap Library Cdn Link -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="Landingpage/script.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

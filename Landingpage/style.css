@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserra:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#glow-blur {
+    height: 500vmin;
+    width: 50vmin;
+    background-color: #134eab66;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+    transition: all linear 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    padding: 50px;
+}
+
+#nav img {
+    width: 9vmin;
+    height: 6vmin;
+}
+
+#nav h4 {
+    padding: 10px;
+    font-size: 4vmin;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.logo-section {
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 0.8em;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #032b6a;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 105%;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+
+/****** hero-section ******/
+
+.hero-img {
+    height: 100vh;
+    width: 100%;
+    object-position: top;
+    z-index: 1;
+    position: absolute;
+    background-image: linear-gradient(#0013604f, #0000004f), url(../assets/images/house-img-5.webp);
+    background-size: cover;
+}
+
+#main {
+    position: relative;
+    background-color: #1d1b89f2;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 11vmin;
+    padding: 30px;
+    font-weight: 900;
+    position: relative;
+    text-shadow: 2px 2px 25px #000000;
+}
+
+#page1 h1::before {
+    content: "BUY. SELL. RENT.";
+    padding: 31px;
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 2px #032b6a;
+    z-index: -1;
+}
+
+#page1 h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#page1 p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100vmin;
+    padding: 0px 80px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    box-shadow: 0px 5px  #032b6a;
+}
+
+#submit-btn:active,
+#nav-btn:active {
+    transform: scale(.9);
+}
+
+/**** page-2 ****/
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 10px;
+    transition: all linear 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 2px #0f4eb2;
+}
+
+#scroller h4:hover {
+    color: #0f4eb2;
+    -webkit-text-stroke: 2px #0f4eb2;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/***** about-section *****/
+
+#about-us {
+    height: 70vh;
+    width: 100%;
+    color: #032b6a;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+}
+
+
+#about-us-in {
+    width: 90vmin;
+    text-align: center;
+    color: #cecece;
+}
+
+#about-us-in h3 {
+    font-size: 7vmin;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#about-us-in p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#cards-container {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmax;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    height: 55vh;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1 {
+    background-image: url(../assets/images/home-1.jpg);
+}
+
+#card2 {
+    background-image: url(../assets/images/home-2.jpg);
+}
+
+#card3 {
+    background-image: url(../assets/images/home-3.jpg);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #4b99f8;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4 {
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 18px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 10deg);
+    box-shadow: 5px 15px 1px #050c2f;
+}
+
+
+#blue-div {
+    margin-top: 40px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left bottom, #13119f, #22dde0);
+}
+
+#blue-div h4 {
+    width: 60%;
+    line-height: 5vmin;
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4vmin;
+    text-transform: uppercase;
+}
+
+#signupBtn {
+    text-transform: uppercase;
+    margin: 30px 0px 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #032b6a;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+
+/***** footer *****/
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 6rem;
+}
+
+.container {
+    z-index: 99;
+    margin-top: 33px;
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    color: var(--secondayColor);
+    text-shadow: 2px 1px 1px #ffffffd9, 0 0 5px #000000;
+}
+
+.container a img {
+    width: 45px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.container p {
+    margin: 25px 0;
+    font-size: 1rem;
+}
+
+.container h2 {
+    text-shadow: 2px 2px 2px #000;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-lists {
+    height: 35vmin;
+    padding-top: 30px;
+}
+
+.footer-lists ul li {
+    margin: 2vmin 0;
+    font-size: 1.1rem;
+}
+
+.footer-lists ul li,
+.container a,
+.footer-lists h3:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-lists h3 {
+    margin-bottom: 25px;
+}
+
+@media (max-width:860px) {
+    #cards-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        height: 55vh;
+        width: 50%;
+    }
+
+    .footer-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .container {
+        grid-column: 1/3;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav img {
+        width: 65px;
+        height: 55px;
+        margin-bottom: 25px;
+    }
+}
