@@ -315,11 +315,11 @@ ion-icon{
 }
 
 .about .section-title {
-    font-size: 2.5rem;
+    font-size: 2.5em;
+    margin: 20px 0px;
     --text-align: left;
     --margin-bottom: 15px;
     color: #fff;
-    text-shadow: 2px 2px 5px #000;
 }
 
 .about-text {
@@ -384,6 +384,26 @@ ion-icon{
 .service {
     background: var(--cultured-2);
     padding-block: var(--section-padding);
+}
+
+.service .section-subtitle{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: #032a6a81;
+    text-align: center;
+    padding: 10px 3px;
+    border-radius: 20px;
+}
+
+.service .section-title{
+    margin-bottom: 30px;
+}
+
+.service .container{
+    text-align: center;
 }
 
 .service-list {
