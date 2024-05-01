@@ -1027,7 +1027,7 @@ ul {
    }
 }
 
-@media (max-width:361px){
+@media (max-width:560px){
 
    .footer-lists{
       display: none;

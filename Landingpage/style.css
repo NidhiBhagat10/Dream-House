@@ -78,8 +78,8 @@ a {
 
 .btn::before {
     content: '';
-    width: 0;
-    height: 300%;
+    width: 0px;
+    height: 500%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -164,12 +164,12 @@ a {
     text-shadow: 2px 2px 5px #000;
 }
 
-#submit-btn {
+#search-btn {
     margin-top: 20px;
-    box-shadow: 0px 5px  #032b6a;
+    padding: 15px;
 }
 
-#submit-btn:active,
+#search-btn:active,
 #nav-btn:active {
     transform: scale(.9);
 }
@@ -452,30 +452,111 @@ ul {
     }
 
     #nav img {
-        width: 65px;
-        height: 55px;
-        margin-bottom: 25px;
+        width: 55px;
+        height: 40px;
+        margin-bottom: 10px;
     }
 }
 
-@media (max-width:360px) {
-    .footer-lists{
+@media (max-width:560px) {
+
+    .footer-lists {
         display: none;
     }
-    .container{
+
+    .container {
         text-align: center;
         height: 30px;
     }
-    #nav{
+
+    #nav {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #nav img{
+
+    #nav img {
         width: 40px;
         height: 30px;
     }
-    .nav-right .btn{
+
+    .nav-right .btn {
         display: none;
+    }
+
+    .social-links a img {
+        width: 35px;
+    }
+
+    #about-us-in p {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    #glow-blur {
+        background-color: #10449666;
+    }
+
+    #page1 h2 {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    #page1 p {
+        display: none;
+    }
+
+    #search-btn {
+        width: 11em;
+        font-size: .8em;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+
+    #scroller-in h4 {
+        margin-top: 10px;
+        font-size: 11vmin;
+    }
+
+    #about-us {
+        height: 300px;
+    }
+
+    #card1,
+    #card2,
+    #card3 {
+        background-image: none;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: #4b99f8;
+        padding: 30px;
+        padding-top: 10px;
+        opacity: 1;
+        transition: all ease 0.6s;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay h4 {
+        color: #000;
+        font-size: 20px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    .overlay p {
+        color: #121212c6;
+        font-size: 18px;
+        height: 40px;
+        width: 100%;
+        overflow: hidden;
     }
 }
