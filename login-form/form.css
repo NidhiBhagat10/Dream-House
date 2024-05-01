@@ -136,3 +136,15 @@ form p a{
     background: #eaeaea;
     color: #3c00a0;
 }
+
+@media (max-width:360px){
+    img{
+        display: none;
+    }
+    .form-box{
+        padding: 30px 30px 40px;
+    }
+    .btn-field button{
+        margin-top: -20px;
+    }
+}

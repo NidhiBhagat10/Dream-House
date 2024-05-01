@@ -924,3 +924,18 @@ ul{
         justify-content: center;
     }
 }
+
+@media (max-width:360px){
+    
+    .footer-lists{
+       display: none;
+    }
+
+    .about-content .section-title{
+        margin: 10px 0px;
+        font-size: 1.5em;
+    }
+    .container-1 {
+        display: none;
+    }
+ }
