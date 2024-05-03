@@ -28,8 +28,8 @@ https://dreamhousee.netlify.app/
 
 ## Contributors
 
->1. Nidhi Bhagat(TL): Landing page and Sign up/ Sign-in Page
->2. Keshav Bajpai: Home Page and Contact page html and css code
->3. Shubham Agnihotri: Search Property and contact page javascript code 
->4. Ravi Kumar: Propert Listing page
->5. Bharat: View Property page
+>1. `Nidhi Bhagat(TL):` Landing page and Sign up/ Sign-in Page
+>2. `Keshav Bajpai:` Home Page and Contact page html and css code
+>3.` Shubham Agnihotri:` Search Property and contact page javascript code 
+>4. `Ravi Kumar:` Propert Listing page
+>5. `Bharat:` View Property page
