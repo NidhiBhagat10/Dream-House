@@ -1,3 +1,5 @@
+/****** Frequently asked questions******/
+
 document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
     headings.onclick = () =>{
        headings.parentElement.classList.toggle('active');
@@ -5,6 +7,7 @@ document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
  });
 
  /****** Form Validation  *******/   
+
  document.addEventListener("DOMContentLoaded", function() {
 
     // Function to check if the input fields are filled correctly
@@ -38,7 +41,7 @@ document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
         return false;
       }
   
-      return true;
+      return true; 
     }
   
     // Add event listener to the send button
@@ -55,7 +58,7 @@ document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
       // Show the thank you message
       alert("Thank you for getting in touch!");
 
-      window.open("contact.html");
+      window.open("contact.html"); // open contact page after submition 
     });
   });
   

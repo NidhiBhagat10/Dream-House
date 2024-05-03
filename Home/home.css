@@ -139,6 +139,8 @@ a {
     width: 100%;
 }
 
+/******* Scrollbar *******/
+
 .has-scrollbar {
     display: flex;
     align-items: flex-start;
@@ -172,7 +174,7 @@ a {
     width: 15%;
 }
 
-/*** header ****/
+/*** header-section ****/
 
 .header {
     position: relative;
@@ -260,7 +262,7 @@ a {
 ion-icon{
     display: flex;
 }
-/**** hero *****/
+/**** hero section *****/
 
 .hero {
     background: var(--cultured-2);
@@ -302,7 +304,7 @@ ion-icon{
     margin-bottom: 30px;
 }
 
-/***** about ******/
+/***** about section ******/
 
 .about {
     padding-block: var(--section-padding);

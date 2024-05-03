@@ -33,6 +33,7 @@ function openSignupForm() {
    window.open("../login-form/form.html");
 }
 
+
 let menu = document.querySelector('.header .menu');
 
 document.querySelector('#menu-btn').onclick = () => {
