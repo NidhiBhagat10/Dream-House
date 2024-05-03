@@ -16,14 +16,14 @@ DreamHouse is a real estate website aimed at providing users with a platform to 
 
 ## Technologies Used:
 
-> HTML, CSS, JAVASCRIPT
-> Fontawsome for icons
-> Gsap for some moving animation 
+>1. HTML, CSS, JAVASCRIPT
+>2. Fontawsome for icons
+>3. Gsap for some moving animation 
 
 ## Contributors
 
-> Nidhi Bhagat(TL): Landing page and Sign up/ Sign-in Page
-> Keshav Bajpai: Home Page and Contact page html and css code
-> Shubham Agnihotri: Search Property and contact page javascript code 
-> Ravi Kumar: Propert Listing page
-> Bharat: View Property page
+>1. Nidhi Bhagat(TL): Landing page and Sign up/ Sign-in Page
+>2. Keshav Bajpai: Home Page and Contact page html and css code
+>3. Shubham Agnihotri: Search Property and contact page javascript code 
+>4. Ravi Kumar: Propert Listing page
+>5. Bharat: View Property page
